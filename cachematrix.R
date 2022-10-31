@@ -4,6 +4,9 @@
 
 ## This function creates a special "matrix" object that caches its inverse.
 
+## Description of this Function comes from the "assignment" section of the
+## course itself.
+
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         set <- function(y) {
@@ -20,7 +23,10 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function computes the inverse of the special "matrix" returned
 ## by makeCacheMatrix above. If the inverse has already been calculated
 ## (and the matrix has not changed), then the cachesolve should retrieve
-## the inverse from the cache
+## the inverse from the cache.
+
+## Description of this Function comes from the "assignment" section of the
+## course itself.
 
 cacheinverse <- function(x, ...) {
         inv <- x$getinverse()
